@@ -1,0 +1,2 @@
+# 时间同步，192.168.0.1 内网NTP服务器
+10 5 * * * /usr/sbin/ntpdate -u 192.168.0.1 && /sbin/hwclock -w >/dev/null &
